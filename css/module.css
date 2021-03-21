@@ -1,0 +1,21 @@
+header{
+    text-align: center;
+   
+}
+.r1 span{
+    display: inline;
+    text-align: center;
+}
+.r2 span{
+    display: inline;
+    text-align: center;
+}
+aside{
+    float: left;
+    text-align: center;
+   
+}
+footer{
+    text-align: center;
+    
+}

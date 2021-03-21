@@ -1,0 +1,35 @@
+header{
+    background-color: antiquewhite;
+}
+aside{
+    background-color: azure;
+}
+#c{
+    background-color: burlywood;
+}
+#d{
+    background-color: darkgray;
+    padding-right: 140px;
+}
+#e{
+    background-color: darkkhaki;
+}
+#f{
+    background-color: darksalmon;
+}
+#g{
+    background-color: goldenrod;
+}
+#h{
+    background-color: hotpink;
+    padding-right: 30px;
+}
+footer{
+    background-color: beige;
+}
+@media (min-width: 768px){
+    span{
+        display: block;
+    }
+}
+  
