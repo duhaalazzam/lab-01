@@ -1,0 +1,87 @@
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body > * {
+    border:1px solid #000;
+}
+
+body > header, body > footer {
+    background:#444;
+    color: #eee;
+    height: 70px;
+    line-height:70px;
+    text-align:center;
+}
+body > footer {
+    background:
+    color: #eee;
+    height: 70px;
+    line-height:70px;
+    text-align:center;
+}
+main {
+    background: #fafafa;
+}
+
+main > .content {
+    background: rgb(197, 122, 122);
+}
+
+main > aside {
+    background: #9C9000;
+}
+
+main > nav {
+    background: #ff0000;
+}
+
+.deck .r1:first-child {
+    background: #0FA0CE;
+}
+.deck .r1:last-child{
+    background: darkgoldenrod;
+}
+
+
+.deck:first-child {
+    border-bottom:1px solid black;
+}
+@media (max-width:960px)
+{
+
+.r1:first-child,.r2:first-child,.r2:nth-child(2){
+    border-bottom:1px solid black;
+}
+.r2{
+    background:darkturquoise;
+}
+}
+@media (max-width:500px)
+{
+  .r2:nth-child(3){
+    border-bottom:1px solid black; 
+  }
+  .r2{
+      background: darkkhaki;
+  }
+}
+/* 000000000000000 */
+
+.deck:first-child {
+    border-bottom:1px solid black;
+}
+.r1:first-child,.r2:not(:last-child) {
+    border-right:1px solid black;
+}
+
+.centeredWords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

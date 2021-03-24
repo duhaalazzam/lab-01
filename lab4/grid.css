@@ -1,0 +1,77 @@
+/* desktop view */
+@media (min-width: 960px) {
+  main {
+    display: grid;
+    /* grid-template-columns: 25% 1fr 25%; */
+    grid-template-columns: 1fr 3fr;
+    height: calc(100% - 140px);
+  }
+
+  nav {
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+  }
+  .deck:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .deck:last-child{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  /* aside {
+    order: 3;
+  } */
+}
+/* tablet view */
+@media (max-width: 960px) and (min-width: 500px){
+
+  main{
+    height: calc(100% - 140px);
+  }
+  nav{
+    height: 20%;
+  }
+  .content{
+    height: 80%;
+  }
+  .deck {
+    height: 50%;
+  }
+  .r1{
+    height: 50%;
+  }
+  
+  .deck:last-child{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+}
+/* mobile view */
+@media (max-width:500px)
+{
+  main{
+    height: calc(100% - 140px);
+  }
+  nav{
+    height: 15%;
+  }
+  .content{
+    height: 85%;
+  }
+  .deck {
+    height: 50%;
+  }
+  .r1{
+    height: 50%;
+  }
+  .r2{
+    height: 25%;
+  }
+}
